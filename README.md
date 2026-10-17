@@ -15,7 +15,7 @@ API phục vụ mẫu truy vấn theo trang, không tải toàn bộ tập dữ 
 ## Bản đồ
 - OSM raster tiles: https://www.openstreetmap.org/copyright
 - Mapbasic2: https://github.com/xulytiengviet/mapbasic2
-- R2 PMTiles: theo cấu hình công khai của mapbasic2. Chế độ Mapbasic2 hiện chỉ kích hoạt nếu archive là raster PMTiles; với vector PMTiles ứng dụng chuyển về OSM và yêu cầu cấu hình metadata/source-layer trước khi có thể hiển thị đầy đủ.
+- R2 PMTiles: theo cấu hình công khai của mapbasic2. Chế độ Mapbasic2 hỗ trợ cả raster PMTiles và vector PMTiles có metadata vector_layers. Kiểu hiển thị vector hiện là màu sắc tổng quát; để tái hiện chính xác phong cách Mapbasic2 cần lấy style/layer gốc. Khi không đọc được archive, ứng dụng trở về OSM.
 - Các vòng tròn biểu thị số persona trong mẫu theo **tâm vùng minh họa**, không phải tọa độ cư trú, heatmap dân số hay đo mật độ.
 
 ## Lưu ý khoa học
